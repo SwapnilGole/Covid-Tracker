@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+        /* background-color:#34495e; */
+        color:#fff;
+        background-color:#bdc9cc !important;
+        
+        /* background-size: cover;
+        background-position: center;
+        background-attachment: fixed; */
+    }
+    .covid-vaccination{
+        /* background:linear-gradient(red,blue,green); */
+        /* background:#6ab9d1; */
+        padding:20px 0;
+    }
+    .covid-vaccination h1{
+        text-align:center;
+        font-size:22px;
+        color:#fff;
+        letter-spacing:0.2px;
+    }
+    /* FAQ header */
+    .faq-header{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background:#ccc;
+        margin:1rem 0;
+    }
+    .faq-header a{
+        text-decoration:none;
+        font-size:1rem;
+        font-weight:500;
+        color:#fff;
+    }
+    .faq-header a:hover{
+        
+        color:#2aadeb;
+        border-bottom:1px solid #eee020 !important;
+    }
+    .accordion{
+        width:90%;
+        max-width:1000px;
+        margin:2rem auto;
+    }
+    .accordion-item{
+        background-color:rgb(230, 223, 223);
+        color:#111;
+        margin:1rem 0;
+        border-radius:0.5rem;
+        box-shadow:0 4px 5px 0 rgba(0,0,0,0.4);
+    }
+    .accordion-item-header{
+        padding:0.5rem 3rem 0.5rem 1rem;
+        min-height:3.5rem;
+        line-height:1.25rem;
+        font-weight:bold;
+        display:flex;
+        align-items:center;
+        position:relative;
+        cursor:pointer;
+    }
+    .accordion-item-header::after{
+        content:"\002B";
+        font-size:1.5rem;
+        position:absolute;
+        right:1rem;
+        /* transition:transform 0.2s ease-in-out; */
+    }
+    .accordion-item-header.active::after{
+        content:"\2212";
+        /* transform:rotate(45deg); */
+    }
+    .accordion-item-body{
+        max-height:0;
+        overflow:hidden;
+        transition:max-height 0.2s ease-out;
+        
+    }
+    .accordion-item-body-content{
+        background:#111;
+        padding:0.8rem;
+        line-height:1.5rem;
+        border-top:2px solid #363d32;
+        border-image: linear-gradient(to right,transparent, #008746,#0f86bd,transparent) 1;
+        position:relative;
+        color:#fff;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    .accordion-item-body-content::before{
+        content:"";
+        position:absolute;
+        width:0.3rem;
+        height:80%;
+        top:50%;
+        left:0;
+        transform:translateY(-50%);
+        background:#73c988;
+        margin:0 3px;
+    }
+    .headings{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:90%;
+    }
+    .head a{
+        /* margin: 10px 10px; */
+        text-decoration:none;
+        color:#111;
+        
+        /* background:#45d8c4; */
+        font-size:22px;
+        /* font-weight:18px; */
+        /* border-radius:5px; */
+        transition:0.3s;
+        margin-bottom:5px;
+        
+    }
+    
+    .headings a:hover{
+        /* background-color:#a7ddd5; */
+        /* color:rgb(43, 152, 202); */
+        border-bottom:1px solid rgb(238, 208, 39);
+    }
+    .headings .bx{
+        color:#111;
+        font-size:1.7rem;
+    }
+
+    
+    /* .accordion-item-header.active + .accordion-item-body{
+        display:block
+    } */
+
+    /* youtube videos */
+    .youtube-videos h1, .resources h1 , .covid-vaccination h1{
+        font-size:1.7rem;
+        border-bottom:2px solid #effc43;
+        text-align:center;
+        margin:10px 0;
+    }
+    .youtube-videos h3{
+        font-size:1rem;
+        padding:10px 0;
+        text-align:center;
+    }
+    /* resources */
+    .resources{
+        background:rgb(224, 216, 216);
+    }
+    .resources-link{
+        padding:20px 0;
+    }
+    .resources span a{
+        color:#ce5342;
+        text-decoration:none;
+        font-size:1.4rem;
+        animation:linkword 0.5s linear infinite;
+    }
+    .resources span a:hover{
+        color:rgb(24, 104, 207);
+    }
+    .resources .disclaimer span{
+        color:#111;
+    }
+    @keyframes linkword{
+       
+        0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+        
+    }
+    @media(max-width:767px){
+        html{
+            font-size:14px;
+        }
+    }
+    .button-box{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .button-box .btn{
+        border-radius:5px;
+        
+    }
+    .button-box .btn a{
+        padding:10px 5px;
+        background:#94f8ad;
+        margin: 10px;
+        text-decoration:none;
+        color:#111;
+        font-size:1rem;
+        font-weight:bold;
+        border-radius:5px;
+        box-shadow:"10 12px 50px rgba(0,0,0,0.9)";
+        transition:0.2s;
+    }
+    .button-box .btn a:hover{
+        background:#111;
+        color:#94f8ad;
+
+    }
