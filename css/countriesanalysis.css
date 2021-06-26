@@ -9,7 +9,7 @@
     --bg-hover:#f4f4f4;
 
     --color-text:#172b4d;
-    --nav-height:70px;
+    --nav-height:50px;
     --shadow:0 0 30px 0 rgb(82 63 105 / 5%);
 }
 .dark{
@@ -60,8 +60,8 @@ body{
 }
 .logo{
     color:var(--color-text);
-    font-size:2rem;
-    font-weight:900;
+    font-size:2rem !important;
+    font-weight:500;
 }
 .logo i{
     color:red;
@@ -280,13 +280,17 @@ body{
 .table-countries{
     width:100%;
     border-spacing:0;
+    padding-right:2px;
+}
+.table-countries tr{
+    text-align:center;
 }
 .table-countries thead tr th,
 .table-countries tbody tr td{
     border-bottom:1px solid solid var(--bg-body);
 }
 .table-countries th{
-    padding:0.5rem;
+    padding:0.4rem;
 }
 .table-countries td{
     font-weight:0.9rem;
@@ -298,6 +302,20 @@ body{
     background-color:#111;
     color:#fff;
     border-radius:15px;
+}
+@media(max-width:768px){
+    .table-countries th{
+    padding:0.1rem;
+}
+.table-countries th{
+    padding:0.02rem;
+}
+.table-countries td{
+    font-weight:0.2px;
+    padding:0rem;
+    width:0%;
+    text-align:center;
+}
 }
 /* end countries table */
 

@@ -181,11 +181,11 @@ nav ul li a.active,nav ul li a:hover{
 }
 
 /* covid preventions */
-#covid-preventions .preventions img{
+#covid-preventions .preventions img , #hand-wash .washing-hand img{
     height:128px;
     width:128px;
 }
-#covid-preventions .preventions .col-lg-4 h3{
+#covid-preventions .preventions .col-lg-4 h3,#hand-wash .washing-hand .col-lg-4 h3{
     font-size:1.5rem;
     font-weight:700;
     margin:5px 0;
@@ -196,26 +196,26 @@ nav ul li a.active,nav ul li a:hover{
     font-weight:500;
 }
 /* hand wash */
-#hand-wash{
+/* #hand-wash{
 background:url('/images/background-img.jpg');
 padding:10px 0;
+margin:0 10px;
+text-align:center;
 }
-#hand-wash .col-lg-3 img{
-    /* align-items:center;
-    text-align:center; */
+#hand-wash .col-lg-4 img{
     height:128px;
     width:128px;
 }
-#hand-wash .col-lg-3 .main-img img{
+#hand-wash .col-lg-4 .main-img img{
     width:400px;
     height:800px;
 }
-#hand-wash .col-lg-3 h3{
-    /* text-align:center; */
+#hand-wash .col-lg-4 h3{
+    text-align:center;
     font-size:1.5rem;
     font-weight:700;
     color:var(--dark-blue);
-}
+} */
 /* covid-update */
 .corona_update{
     margin:0 0 30px 0;
@@ -491,4 +491,35 @@ df-messenger div.chat-wrapper[opened="true"]{
 }
 .table-responsive  .ndeaths{
     background:#7afad1;
+}
+
+/* media queries */
+@media(max-width:768px){
+    .footer .row .col-lg-3{
+        border-right:none;
+        border-bottom:1px solid #ccc;
+    }
+}
+@media(max-width:768px){
+    .footer .row .col-lg-3{
+        border-right:none;
+        border-bottom:1px solid #ccc;
+    }
+    .navbar ul li a{
+        text-align: center;
+        margin:0;
+    }
+    #hand-wash .col-lg-4 .img-box{
+        margin:auto;
+        height:128px;
+        width:128px;
+    }
+    #hand-wash .col-lg-4 h3{
+    text-align:center;
+    }
+}
+
+/* states page - let's stay  safe and fight together*/
+.rightside h1{
+    text-align:center;
 }
